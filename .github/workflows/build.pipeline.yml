@@ -12,4 +12,11 @@ jobs:
   parse-materializations:
     name: Scan sql files materialization
     runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+      - uses: actions/setup-python@v4
+      - run: python my_script.py
 
+  
